@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Q_2.CSS">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script>
+        var app = angular.module("myApp", ['ngRoute']);
+        app.config(function($routeProvider) {
+            $routeProvider.when('/2059', {
+                    templateUrl: 'C:\Users\MANIKANTAN\Desktop\WEB TECH EXPT\EX 10.2(2).html'
+                })
+                .when('/2061', {
+                    templateUrl: 'C:\Users\MANIKANTAN\Desktop\WEB TECH EXPT\EX 10.2(3).html'
+                })
+                .when('/1149', {
+                    templateUrl: 'C:\Users\MANIKANTAN\Desktop\WEB TECH EXPT\EX 10.2(4).html'
+                })
+                .when('/2117', {
+                    templateUrl: 'C:\Users\MANIKANTAN\Desktop\WEB TECH EXPT\EX 10.2(5).html'
+                })
+
+        });
+    </script>
+</head>
+
+<body ng-app="myApp">
+    <div class="sidebar" width="20%">
+        <h2>REGISTER NUMBERS</h2>
+        <a href="file:///C:/Users/MANIKANTAN/Desktop/WEB%20TECH%20EXPT/EX%2010.2(2).html"><b>URK20CS2059</b></a>
+        <a href="file:///C:/Users/MANIKANTAN/Desktop/WEB%20TECH%20EXPT/EX%2010.2(3).html"><b>URK20CS2061</b></a>
+        <a href="file:///C:/Users/MANIKANTAN/Desktop/WEB%20TECH%20EXPT/EX%2010.2(4).html"><b>URK20CS1149</b></a>
+        <a href="file:///C:/Users/MANIKANTAN/Desktop/WEB%20TECH%20EXPT/EX%2010.2(5).html"><b>URK20CS2117</b></a>
+    </div>
+    <div class="content" ng-view></div>
+</body>
+
+</html>
